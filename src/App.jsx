@@ -54,7 +54,7 @@ function App() {
       />
       <Routes>
         {/* Route công khai */}
-        <Route path="/login" element={<LoginPage />} />
+        <Route path="/qr_app_210525/login" element={<LoginPage />} />
 
         {/* Các Route riêng tư sử dụng PrivateRoute wrapper */}
         <Route
