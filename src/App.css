@@ -1,3 +1,40 @@
+
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400; /* Regular mặc định */
+  color: #2d3748; /* Màu chữ mặc định - ví dụ */
+  background-color: #f4f6f8; /* Màu nền chung cho các trang */
+}
+
+/* Bạn có thể tăng font-weight mặc định nếu muốn toàn bộ dày hơn */
+/* Ví dụ:
+body {
+  font-weight: 500; // Medium
+}
+*/
+
+/* Hoặc bạn có thể set font-weight cụ thể cho các thẻ text chính */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800; /* SemiBold cho tiêu đề */
+}
+
+p, span, label, input, button, td, th, a {
+  /* Nếu bạn muốn tất cả các text này dày hơn một chút so với regular */
+  font-weight: 500;  /* Medium */
+}
+
+/* Để chữ trong input, button không bị kế thừa font-weight quá đậm (nếu có) */
+input, button, select, textarea {
+  font-family: inherit; /* Kế thừa font từ body */
+  font-weight: 400; /* Hoặc 500 nếu bạn muốn dày hơn */
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +72,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.page-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f4f7f6; /* Hoặc màu nền bạn muốn */
+}
+
+.page-content-area {
+  flex-grow: 1;
+  /* padding: 20px; */ /* Form đã có margin auto */
 }

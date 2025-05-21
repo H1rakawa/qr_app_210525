@@ -1,0 +1,251 @@
+/* CreateQRForm.css */
+
+.qr-form-container {
+  width: 100%;
+  max-width: 960px; /* max-w-md */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;      /* Quan trọng: sắp xếp các section theo hàng ngang */
+  gap: 24px;                /* Khoảng cách giữa hai section */
+  align-items: flex-start;  /* Căn các section theo đỉnh */
+}
+
+.form-section {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  padding: 24px;
+  flex: 1; /* Allow sections to grow and take available space */
+}
+
+.qr-form-container > .form-section:first-child {
+  flex-basis: 60%; 
+}
+.qr-form-container > .form-section:last-child {
+  flex-basis: 40%;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.header-icon {
+  width: 20px;
+  height: 20px;
+  color: #3b82f6; /* text-blue-500 */
+  margin-right: 8px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937; /* text-gray-800 */
+  margin: 0;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.field-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151; /* text-gray-700 */
+  margin-bottom: 4px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db; /* border-gray-300 */
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.2s;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  border-color: #3b82f6; /* blue-500 */
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+}
+
+.radio-group {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.radio-item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #374151;
+  cursor: pointer;
+}
+
+.radio-input {
+  margin-right: 8px;
+  color: #2563eb; /* text-blue-600 */
+  cursor: pointer;
+}
+
+.input-with-button {
+  display: flex;
+  gap: 8px;
+  align-items: stretch; 
+}
+
+.flex-input {
+  flex: 1; 
+}
+
+.generate-button {
+  padding: 8px 16px;
+  background-color: #3b82f6; 
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: auto; Đảm bảo nút không chiếm 100% width khi trong flex container */
+  /* margin-top: 0; Xóa margin top nếu có */
+}
+
+.generate-button:hover {
+  background-color: #2563eb; 
+}
+
+.generate-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5), 0 0 0 4px rgba(59, 130, 246, 0.1);
+}
+
+.add-button { 
+  padding: 8px 12px;
+  background-color: #3b82f6; 
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  white-space: nowrap; 
+}
+
+.add-button:hover {
+  background-color: #2563eb; 
+}
+
+.add-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5), 0 0 0 4px rgba(59, 130, 246, 0.1);
+}
+
+.button-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: #3b82f6; 
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit-button:hover {
+  background-color: #2563eb; 
+}
+
+.submit-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5), 0 0 0 4px rgba(59, 130, 246, 0.1);
+}
+
+.quantity-input {
+  width: 100%;
+}
+
+.reward-codes-display {
+  margin-top: 12px;
+  padding: 10px;
+  border: 1px solid #e5e7eb; 
+  border-radius: 6px;
+  background-color: #f9fafb; 
+}
+
+.reward-codes-display strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #374151; 
+}
+
+.reward-codes-display ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 6px; 
+}
+
+.reward-codes-display li {
+  background-color: #e0e7ff; 
+  color: #3730a3; 
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+@media (max-width: 768px) { 
+  .qr-form-container {
+    flex-direction: column; 
+    margin: 0 16px;
+  }
+  .qr-form-container > .form-section:first-child,
+  .qr-form-container > .form-section:last-child {
+    flex-basis: auto; 
+    width: 100%; 
+  }
+}
+
+@media (max-width: 640px) {
+  .input-with-button { /* Áp dụng cho cả hai trường hợp dùng input-with-button */
+    flex-direction: column;
+  }
+  
+  /* Điều chỉnh cụ thể cho nút "Thêm" và "Tạo & Thêm Random" khi ở layout cột */
+  .input-with-button > .add-button,
+  .input-with-button > .generate-button { 
+    margin-top: 8px; 
+    align-self: stretch; /* Nút chiếm toàn bộ chiều rộng của container cha */
+    width: 100%; /* Đảm bảo nút chiếm 100% chiều rộng */
+  }
+}

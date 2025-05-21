@@ -1,0 +1,154 @@
+/* InvitationDetails.css */
+
+/* Main Content Styles */
+.invitation-main-content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Căn giữa card theo chiều dọc và ngang */
+  padding: 32px;
+}
+
+.invitation-details-card {
+  background-color: #ffffff;
+  border-radius: 12px; /* Bo góc card lớn hơn */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07), 0 3px 6px rgba(0,0,0,0.05);
+  padding: 32px;
+  width: 100%;
+  max-width: 420px; /* Chiều rộng tối đa của card */
+  text-align: center; /* Căn giữa các thành phần bên trong card */
+}
+
+.card-title {
+  font-size: 22px; /* Kích thước tiêu đề card */
+  font-weight: 600;
+  color: #111827; /* Màu đen đậm hơn */
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.qr-code-section {
+  margin-bottom: 24px;
+  padding: 12px; /* Padding quanh QR code */
+  background-color: #f9fafb; /* Nền rất nhạt cho vùng QR */
+  border-radius: 8px;
+  display: inline-block; /* Để padding và background chỉ bao quanh QR */
+}
+
+.qr-code-image {
+  width: 160px; /* Kích thước QR code */
+  height: 160px;
+  display: block;
+  margin: 0 auto 10px auto;
+  border: 1px solid #e5e7eb; /* Viền nhẹ cho QR */
+  border-radius: 4px;
+}
+
+.qr-code-caption {
+  font-size: 13px;
+  color: #6b7280; /* Màu xám nhạt cho caption */
+  margin: 0;
+}
+
+.guest-info-section {
+  background-color: #f9fafb; /* Nền rất nhạt cho phần thông tin */
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 28px;
+  text-align: left; /* Căn trái text trong phần thông tin */
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+.info-item:last-child {
+  margin-bottom: 0;
+}
+
+.info-icon {
+  color: #6b7280; /* Màu icon xám */
+  margin-right: 10px;
+  flex-shrink: 0; /* Ngăn icon bị co lại */
+}
+
+.info-label {
+  color: #4b5563; /* Màu label xám đậm hơn */
+  font-weight: 500;
+  margin-right: 6px;
+  min-width: 100px; /* Đảm bảo các label có độ rộng nhất định để căn thẳng hàng */
+}
+
+.info-value {
+  color: #1f2937; /* Màu giá trị đen */
+  font-weight: 500;
+}
+
+.info-value.reward-value {
+  color: #f59e0b; /* Màu cam cho mã nhận thưởng */
+  font-weight: 600;
+}
+
+.action-buttons-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Căn giữa các nút */
+  gap: 12px; /* Khoảng cách giữa các nút */
+}
+
+.primary-button.share-qr-button {
+  background-color: #3b82f6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Nút chính chiếm full width */
+}
+.primary-button.share-qr-button:hover {
+  background-color: #2563eb;
+}
+
+.secondary-link-button.invite-another-button {
+  background-color: transparent;
+  color: #3b82f6;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  padding: 6px 0; /* Chỉ padding dọc để giống link */
+  text-decoration: none; /* Bỏ gạch chân nếu là button */
+}
+.secondary-link-button.invite-another-button:hover {
+  color: #2563eb;
+  text-decoration: underline; /* Thêm gạch chân khi hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+     .invitation-main-content {
+    padding: 20px 16px;
+  }
+  .invitation-details-card {
+    padding: 24px;
+    max-width: 100%;
+  }
+  .card-title {
+    font-size: 20px;
+  }
+  .qr-code-image {
+    width: 140px;
+    height: 140px;
+  }
+  .info-label {
+    min-width: 90px; /* Giảm min-width label */
+  }
+}

@@ -1,0 +1,131 @@
+/* Để căn giữa form trên trang */
+.login-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5; /* Màu nền xám nhạt cho cả trang */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.login-container {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* Giới hạn chiều rộng tối đa của form */
+  text-align: center; /* Giúp căn giữa icon và tiêu đề ban đầu */
+  box-sizing: border-box;
+}
+
+.login-icon-wrapper {
+  display: inline-flex; /* Để bọc vừa icon */
+  justify-content: center;
+  align-items: center;
+  width: 70px; /* Kích thước hình tròn */
+  height: 70px;
+  background-color: #3b82f6; /* Màu xanh dương */
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.main-lock-icon {
+  color: white;
+  font-size: 32px; /* Điều chỉnh kích thước icon khóa */
+  /* Nếu dùng SVG:
+  width: 32px;
+  height: 32px;
+  fill: white;
+  */
+}
+
+.login-title {
+  font-size: 28px;
+  color: #1f2937; /* Xám đậm */
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.login-form .form-group {
+  margin-bottom: 20px;
+  text-align: left; /* Căn trái cho label */
+}
+
+.login-form label {
+  display: block;
+  font-size: 14px;
+  color: #4b5563; /* Xám */
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.input-wrapper {
+  position: relative; /* Để định vị icon bên trong */
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 12px 40px 12px 15px; /* Thêm padding phải cho icon */
+  border: 1px solid #d1d5db; /* Viền xám nhạt */
+  border-radius: 8px;
+  font-size: 16px;
+  color: #374151;
+  box-sizing: border-box; /* Quan trọng để padding không làm tăng width */
+}
+
+.login-form input[type="text"]::placeholder,
+.login-form input[type="password"]::placeholder {
+  color: #9ca3af; /* Màu placeholder */
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: #9ca3af; /* Màu icon trong input */
+  font-size: 18px; /* Kích thước icon user/key */
+  /* Nếu dùng SVG:
+  width: 18px;
+  height: 18px;
+  fill: #9ca3af;
+  */
+}
+
+.login-button {
+  width: 100%;
+  background-color: #3b82f6; /* Màu xanh dương */
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-button:hover {
+  background-color: #2563eb; /* Màu xanh đậm hơn khi hover */
+}
+
+.button-arrow-icon {
+  margin-left: 8px;
+  font-size: 16px;
+}
+
+/* Responsive adjustments (optional) */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 30px 20px;
+  }
+  .login-title {
+    font-size: 24px;
+  }
+}

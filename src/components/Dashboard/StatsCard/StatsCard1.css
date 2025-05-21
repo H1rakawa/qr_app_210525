@@ -1,0 +1,39 @@
+/* src/components/Dashboard/StatsCard/StatsCard.css */
+.stats-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  min-width: 220px; /* Đảm bảo card có độ rộng tối thiểu */
+}
+
+.stats-card-icon {
+  font-size: 24px; /* Kích thước icon trong card */
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #e7f3ff; /* Nền icon, có thể thay đổi theo màu icon */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Có thể thêm style riêng cho từng màu icon nếu cần */
+.stats-card-icon.green { background-color: #e6fffa; color: #38a169; }
+.stats-card-icon.orange { background-color: #fffaf0; color: #dd6b20; }
+
+
+.stats-card-title {
+  font-size: 0.9em;
+  color: #666;
+  margin: 0 0 5px 0;
+}
+
+.stats-card-value {
+  font-size: 2em;
+  color: #333;
+  font-weight: 600;
+  margin: 0;
+}
+

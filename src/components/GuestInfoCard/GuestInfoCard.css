@@ -1,0 +1,110 @@
+/* src/components/CustomerInfoCard.css */
+.guest-card-component {
+    min-height: 81vh; /* Đảm bảo layout chiếm ít nhất toàn bộ chiều cao màn hình */
+}
+
+.guest-card {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    width: 350px; /* Điều chỉnh chiều rộng nếu cần */
+    font-family: 'Arial', sans-serif; /* Chọn font phù hợp */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Khoảng cách giữa các khối */
+    margin: 20px auto; /* Căn giữa card trên trang */
+}
+
+.guest-card__avatar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.guest-card__avatar-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 8px;
+  background-color: #fce8f0; /* Màu nền nhạt cho avatar như trong hình */
+  border: 2px solid #fff; /* Viền trắng nhỏ cho avatar */
+}
+
+.guest-card__label {
+  font-size: 0.8rem;
+  color: #6b7280; /* Xám nhạt */
+  margin-bottom: 2px;
+}
+
+.guest-card__name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #111827; /* Đen đậm */
+  margin: 0;
+}
+
+.guest-card__details-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Khoảng cách giữa các mục chi tiết */
+}
+
+.guest-card__detail-item {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Khoảng cách giữa icon và text */
+}
+
+.guest-card__icon {
+  font-size: 1.1rem;
+  color: #3b82f6; /* Màu xanh dương cho icon */
+}
+
+.guest-card__detail-item > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.guest-card__value {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #1f2937; /* Xám đậm */
+  margin: 0;
+}
+
+.guest-card__reward-code {
+  background-color: #e0e7ff; /* Màu nền cho mã thưởng */
+  color: #4338ca; /* Màu chữ cho mã thưởng */
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-weight: bold;
+  display: inline-block; /* Để background chỉ bao quanh text */
+}
+
+.guest-card__checkin-button {
+  background-color: #2563eb; /* Màu xanh dương đậm */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Khoảng cách giữa icon và text trong button */
+  transition: background-color 0.2s ease-in-out;
+}
+
+.guest-card__checkin-button:hover {
+  background-color: #1d4ed8; /* Màu xanh đậm hơn khi hover */
+}
+
+.guest-card__button-icon {
+  font-size: 1.1rem;
+}
+
